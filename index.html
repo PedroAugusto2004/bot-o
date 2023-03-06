@@ -1,0 +1,24 @@
+<button id="meu-botao">Clique em mim!</button>
+
+<style>
+#meu-botao {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+</style>
+
+<script>
+const meuBotao = document.getElementById("meu-botao");
+meuBotao.addEventListener("mouseover", () => {
+  meuBotao.style.transform = "rotate(180deg)";
+});
+</script>
